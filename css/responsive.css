@@ -1,10 +1,12 @@
-@media only screen (max-width: 768px) {
+@media only screen and (min-width : 375px) and (max-width : 812px) {
     .container {
       max-width: 52rem;
     }
 
-    img { 
+    img.twist {
         max-width: 100%;
-    }
+        margin-left: 0;
+        margin-right:0;
+        transform: none;
 
-  }
+  }}

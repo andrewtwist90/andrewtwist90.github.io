@@ -35,7 +35,7 @@ p {
 
 mark {
     background: #fff200;
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 
 img.twist {
@@ -152,6 +152,9 @@ body {
     padding: 2.625rem 1.3125rem;
     }
 .date {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight:700;
     font-size:0.8rem;
     padding-top: 0.2rem;
     margin-bottom: 1rem !important;

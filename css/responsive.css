@@ -9,4 +9,18 @@
         margin-right:0;
         transform: none;
 
-  }}
+  }
+
+  .cover {
+    width: 100%;
+    font-size: 2rem;
+    line-height:150px;
+
+  
+  }
+
+  .cover h1 {
+    vertical-align: middle;
+    margin-bottom: 0rem;
+
+}

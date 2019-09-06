@@ -6,14 +6,12 @@
 <link href="css/responsive.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 <!--include the following meta tag to make chrome dev tools recognize media queries: -->
 <meta name="viewport" content="width=device-width">
 <title>Page Title</title>
 </head>
 <body>
-<div class="progress-container">
-<div class="progress-bar" id="myBar"></div>
-</div> 
 <div class="container">
 <div class=header><a href="/">🚀</a></div>
 <p class="date"><mark>3rd September 2019</mark></p>
@@ -35,16 +33,5 @@
 </div></p>
 <footer>© 2019, Built with HTML and CSS</a></footer>
 </div>
-<script>
-        // When the user scrolls the page, execute myFunction 
-        window.onscroll = function() {myFunction()};
-        
-        function myFunction() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("myBar").style.width = scrolled + "%";
-        }
-        </script>
 </body>
 </html>

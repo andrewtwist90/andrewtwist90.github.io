@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://use.fontawesome.com/6e4424d394.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900&display=swap" rel="stylesheet">
+<!--include the following meta tag to make chrome dev tools recognize media queries: -->
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="A blog by Andrew Twist">
+<meta name="theme-color" content="#fff200" />
+<title>Twist</title>
+</head>
+<body>
+<div class="container">
+<div class=header><a href="/">🚀</a>
+<div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+    </div></div>
+<p class="date"><mark>Sorry pal</mark></p>
+<h1>Page not found</h1>
+<p><strong>My first proper job ended with a brief phone call. Unlike most calls, it wasn’t actually a conversation. It was a professional dressing down punctuated by awkward sobbing.</strong></p>
+<p>I listened as the Managing Director told me he could see no way back for me in his agency. I had no response to his end-of-tether honesty. It took only a few crushing blows before he delivered the inevitable result.</p>
+<img class="twist" alt="nasa launch" src="images/nasa_launch.jpg">
+<div class="imgmeta"><span class="imgcaption">This is the image caption</span></div>
+<p>I listened as the Managing Director told me he could see no way back for me in his agency. I had no response to his end-of-tether honesty. It took only a few crushing blows before he delivered the inevitable result.</p>
+<ul class="bullets"><li class="bullets">I listened as the Managing Director told me he could see no way back for me in his agency.
+</li>
+<li class="bullets">I had no response to his end-of-tether honesty.</li>
+<li class="bullets">It took only a few crushing blows before he delivered the inevitable result.</li></ul>
+<p>I listened as the Managing Director told me he could see no way back for me in his agency. I had no response to his end-of-tether honesty. It took only a few crushing blows before he delivered the inevitable result.</p>
+<p class="more">Tagged:&nbsp;&nbsp;<span class="p-counter-link__count">Work</span>&nbsp;&nbsp;<span class="p-counter-link__count">Personal</span></p> 
+<hr />
+<div class="bio">
+    <span>✌️Written by Andrew Twist</span>
+</div>
+<ul id="footer_list">
+    
+        <li>
+          <a href="https://instagram.com/_atwist" target="_blank">
+            <i class="fa fa-instagram icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="https://twitter.com/_atwist" target="_blank">
+            <i class="fa fa-twitter icon"></i>
+          </a>
+        </li>
+
+        <li>
+                <a href="https://twitter.com/_atwist" target="_blank">
+                  <i class="fa fa-linkedin-square icon"></i>
+                </a>
+              </li>
+
+              <li>
+                    <a href="https://twitter.com/_atwist" target="_blank">
+                      <i class="fa fa-spotify icon"></i>
+                    </a>
+                  </li>
+        
+      </ul>
+<footer>© 2019, Built with HTML and CSS</a></footer>
+</div>
+<script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+</body>
+<style>
+:root{--font-color:black;--bg-color:snow}[data-theme=dark]{--font-color:snow;--bg-color:#020014}html{font:100%/1.75 Merriweather,Georgia,serif;color:var(--font-color);box-sizing:border-box;overflow-y:scroll}#footer_list{font-size:1.6em;color:#333;padding:0 0 .8rem;margin-top:1rem;margin-bottom:0}#footer_list li{display:inline-block;list-style-type:none;padding-left:0;padding-right:12px}#footer_list li a{color:var(--font-color)}.theme-switch-wrapper{display:flex;align-items:center;float:right}.theme-switch-wrapper em{margin-left:10px;font-size:1rem}.theme-switch{display:inline-block;height:34px;position:relative;width:60px}.theme-switch input{display:none}.slider{background-color:#ccc;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0;transition:.4s}.slider:before{background-color:snow;bottom:4px;content:"";height:26px;left:4px;position:absolute;transition:.4s;width:26px}input:checked+.slider{background-color:#464646}input:checked+.slider:before{transform:translateX(26px);background-color:snow}.slider.round{border-radius:34px}.slider.round:before{border-radius:50%}body,html{height:100%;margin:0}body{font-size:18px;background-color:var(--bg-color)}::selection{background:#fff200}p{margin-bottom:1.75rem;margin-top:.5rem}mark{background:#fff200;padding:5px 10px}.date{font-family:Montserrat;text-transform:uppercase;font-weight:700;font-size:.8rem;padding-top:.2rem;margin-bottom:1rem!important}h1{margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.2;margin-top:0!important}h3 a{font-family:Montserrat;font-size:1.6rem;line-height:1;text-decoration:none;color:#333;font-weight:700}h3 a:hover{color:#d80053}.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:1.75rem}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}img.twist{max-width:110%;margin-left:50%;transform:translateX(-50%);margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0}img.default{max-width:100%;margin-left:auto;margin-right:auto;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0}.imgmeta{border-bottom:1px solid #d1d1d1;padding:8px 0;margin-top:-.8rem;margin-bottom:1.75rem}ul.bullets{padding-inline-start:0}li.bullets{list-style:none;position:relative;padding-left:30px;line-height:2;font-size:18px;margin-top:1rem}li.bullets:before{font-family:FontAwesome;position:absolute;left:0;font-size:18px}li.bullets:before{content:"\f135"}li.bullets:hover:before{color:#d80053}.p-counter-link__count{background-color:#f2f2f2;border-radius:10px;color:#333;display:inline-block;padding:1px 8px;font-size:13.5px}p.more{font-family:Montserrat;font-size:13.5px;text-transform:uppercase;font-weight:700}.imgcaption{font-family:Montserrat;font-weight:400;font-size:.75rem;opacity:.75}hr{margin-bottom:calc(1.75rem - 1px);background:#d1d1d1;border:none;height:1px}.container{margin-left:auto;margin-right:auto;max-width:38rem;padding:2.625rem 1.3125rem}.header{margin-left:auto;margin-right:auto;max-width:38rem}.header{font-size:2rem}.header a{text-decoration:none}.tweetembed{margin-bottom:1.75rem}@media only screen and (min-width:375px) and (max-width:812px){.container{max-width:52rem}img.twist{max-width:100%;margin-left:0;margin-right:0;transform:none}.cover{width:100%;font-size:2rem;line-height:150px}.cover h1{vertical-align:middle;margin-bottom:0}}
+</style></html>

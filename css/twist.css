@@ -67,6 +67,14 @@ html {
     transition: .4s
 }
 
+.fa-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .slider:before {
     background-color: snow;
     bottom: 4px;
@@ -86,37 +94,38 @@ input:checked+.slider {
     opacity: 0;
 }
 
-input:checked + .slider.round .crater {
+input:checked+.slider.round .crater {
     opacity: 1;
+    transition: opacity 1000ms ease-in;
 }
 
 .slider.round .crater {
     position: absolute;
-    background-color: #E8CDA5;
+    background-color: silver;
     opacity: 0;
-    transition: opacity 200ms ease-in-out;
-    border-radius: 100%;
-  }
+    border-radius: 100%
+}
 
-  .slider.round .crater--1 {
+.slider.round .crater--1 {
     top: 18px;
-    right: 10px;
+    right: 8px;
     width: 4px;
-    height: 4px;
-  }
+    height: 4px
+}
 
-  .toggle__handler .crater--2 {
-    top: 28px;
-    right: 22px;
+.slider.round .crater--2 {
+    top: 20px;
+    right: 18px;
     width: 6px;
-    height: 6px;
-  }
-  .toggle__handler .crater--3 {
-    top: 10px;
-    right: 25px;
+    height: 6px
+}
+
+.slider.round .crater--3 {
+    top: 8px;
+    right: 15px;
     width: 8px;
-    height: 8px;
-  }
+    height: 8px
+}
 
 input:checked+.slider:before {
     transform: translateX(26px);
@@ -250,7 +259,8 @@ li.bullets {
 }
 
 li.bullets:before {
-    font-family: FontAwesome;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     position: absolute;
     left: 0;
     font-size: 18px

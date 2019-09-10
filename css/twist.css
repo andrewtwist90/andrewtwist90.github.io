@@ -68,11 +68,11 @@ html {
 }
 
 .fa-rotate-45 {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
 
 .slider:before {
@@ -90,13 +90,50 @@ input:checked+.slider {
     background-color: #464646
 }
 
-.slider.round .crater {
+.slider.round .stars {
+    opacity: 0
+}
+
+input:checked+.slider.round .stars {
+    opacity: 1;
+    transition: opacity 1s ease-in
+}
+
+.slider.round .stars {
+    position: absolute;
+    background-color: snow;
     opacity: 0;
+    border-radius: 100%
+}
+
+.slider.round .stars--1 {
+    top: 18px;
+    left: 8px;
+    width: 2px;
+    height: 2px
+}
+
+.slider.round .stars--2 {
+    top: 20px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+.slider.round .stars--3 {
+    top: 8px;
+    left: 15px;
+    width: 6px;
+    height: 6px
+}
+
+.slider.round .crater {
+    opacity: 0
 }
 
 input:checked+.slider.round .crater {
     opacity: 1;
-    transition: opacity 1000ms ease-in;
+    transition: opacity 1s ease-in
 }
 
 .slider.round .crater {
@@ -109,22 +146,22 @@ input:checked+.slider.round .crater {
 .slider.round .crater--1 {
     top: 18px;
     right: 8px;
-    width: 4px;
-    height: 4px
+    width: 2px;
+    height: 2px
 }
 
 .slider.round .crater--2 {
     top: 20px;
     right: 18px;
-    width: 6px;
-    height: 6px
+    width: 4px;
+    height: 4px
 }
 
 .slider.round .crater--3 {
     top: 8px;
     right: 15px;
-    width: 8px;
-    height: 8px
+    width: 6px;
+    height: 6px
 }
 
 input:checked+.slider:before {

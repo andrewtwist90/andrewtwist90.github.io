@@ -37,7 +37,8 @@ html {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    float: right
+    float: right;
+    padding-top: 0.5rem;
 }
 
 .theme-switch-wrapper em {
@@ -95,7 +96,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider.round .stars {
-    opacity: 1;
+    opacity: 0.7;
     transition: opacity 1s ease-in
 }
 
@@ -107,24 +108,24 @@ input:checked+.slider.round .stars {
 }
 
 .slider.round .stars--1 {
-    top: 18px;
-    left: 8px;
+    top: 16px;
+    left: 10px;
+    width: 3px;
+    height: 3px
+}
+
+.slider.round .stars--2 {
+    top: 24px;
+    left: 20px;
     width: 2px;
     height: 2px
 }
 
-.slider.round .stars--2 {
-    top: 20px;
-    left: 18px;
-    width: 4px;
-    height: 4px
-}
-
 .slider.round .stars--3 {
     top: 8px;
-    left: 15px;
-    width: 6px;
-    height: 6px
+    left: 20px;
+    width: 2px;
+    height: 2px
 }
 
 .slider.round .crater {
@@ -146,22 +147,22 @@ input:checked+.slider.round .crater {
 .slider.round .crater--1 {
     top: 18px;
     right: 8px;
-    width: 2px;
-    height: 2px
+    width: 4px;
+    height: 4px
 }
 
 .slider.round .crater--2 {
     top: 20px;
     right: 18px;
-    width: 4px;
-    height: 4px
+    width: 6px;
+    height: 6px
 }
 
 .slider.round .crater--3 {
     top: 8px;
     right: 15px;
-    width: 6px;
-    height: 6px
+    width: 8px;
+    height: 8px
 }
 
 input:checked+.slider:before {
@@ -207,7 +208,7 @@ mark {
     text-transform: uppercase;
     font-weight: 700;
     font-size: .8rem;
-    padding-top: .2rem;
+    padding-top: .6rem;
     margin-bottom: 1rem!important
 }
 
@@ -368,7 +369,8 @@ hr {
 
 @media only screen and (min-width:375px) and (max-width:812px) {
     .container {
-        max-width: 52rem
+        max-width: 52rem;
+        padding-top: 1rem;
     }
     img.twist {
         max-width: 100%;

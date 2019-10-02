@@ -10,6 +10,93 @@
     --svg-highlight-color: silver;
 }
 
+picture {
+    display: block;
+}
+
+.thumbnail-container{
+    position: relative;
+    
+}
+
+.thumbnail-shelf {
+    white-space: nowrap;
+    overflow: auto;
+    padding-top:10px;
+    
+}
+
+
+.puffle-card {
+    width:190px;
+    display: inline-block;
+    padding-right: 10px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    white-space: normal;
+}
+
+.puffle-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+picture img {
+    display: inherit;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.toggle-listing__inner {
+    position: relative;
+    transition: transform .3s ease;
+}
+
+.toggle-listing__overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 40%, #000 100%, #000 95%);
+    border-radius:5px;
+}
+
+.guidesbg {
+    padding: 0.2rem 0.5rem;
+    background-color: #ff0066;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.standard-listing-overlay__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 0 10px 8px
+}
+
+.toggle-listing__subtitle {
+    font-family: "Nunito Sans", Arial;
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    padding: 0.75rem 0.75rem 0;
+}
+
+.toggle-listing__title-wrapper {
+    font-family: "Nunito Sans", Arial;
+    font-weight: 900;
+    font-size:0.9rem;
+    line-height: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    padding: 0 0.75rem 0.75rem;
+    color: #fff;
+}
+
 html {
     font: 100%/1.75 Merriweather, Georgia, serif;
     color: var(--font-color);
